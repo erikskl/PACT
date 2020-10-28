@@ -150,7 +150,7 @@ nav a {
 }
 
 .degree-section{
-    background-color: rgb(252, 252, 199);
+    background-color: rgb(250, 250, 250);
 }
 
 .hero-section  {
@@ -176,9 +176,16 @@ nav a {
 .description-section {
     flex: 1;
     height: fit-content;
-    background-color: rgb(190, 190, 111);
+    background-color: white;
     padding: 25px;
     border-radius: 10px;
+    box-shadow: 4px 3px 10px 0px rgba(8,7,54,0.2);
+}
+
+.description-section a{
+    display: block;
+    margin-bottom: 20px;
+    color: black;
 }
 
 @media only screen and (max-width: 900px) {
@@ -192,3 +199,59 @@ nav a {
             padding-right: 0px;
         }
     }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(250, 250, 250);
+        margin-bottom: 20px;
+    }
+    
+    .icons {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    
+    .kontaktinfo {
+        display: flex;
+        background-color: black;
+        min-height: 300px;
+        padding: 30px 50px 30px 50px;
+        color: white;
+    }
+    
+    .kontaktinfo a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        max-width: 200px;
+        margin-bottom: 10px;
+        padding-right: 30px;
+    }
+    
+    .kontaktinfo a:focus,.kontaktinfo a:hover{
+        color: rgb(136, 136, 136);
+        transition: 0.2s;
+    }
+    
+    .adresse {
+        border-right: 1px solid white;
+        margin-right: 50px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .kontaktinfo {
+            flex-direction: column;
+        }
+    
+        .adresse {
+            border: 0px;
+            border-bottom: 1px solid white;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
