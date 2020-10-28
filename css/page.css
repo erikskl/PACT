@@ -1,0 +1,146 @@
+/*Basic formating*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+}   
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+   font-family: 'Roboto', sans-serif;
+           font-weight: bold;
+   font-size: 1.1rem;
+           color: rgb(83, 0, 218);
+}
+
+li {
+    list-style: none;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img{
+    margin-right: 60px;
+    margin-left: 40px;
+    height: 60px;
+}
+
+.navigation-links {
+    margin-right: auto;
+}
+
+.navigation-links li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+.navigation-links a:hover, .navigation-links a:focus{
+    border-bottom: solid 2px rgb(202, 1, 51);
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+.apply {
+    box-sizing: content-box;
+    margin-right: 20px;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 40px;
+}
+
+.apply:hover,.apply:focus {
+    background-color: black;
+    color: white;
+    border-color: black;
+    transition: 0.3s;
+}
+
+.login {
+    padding: 10px;
+    border: 2px solid  rgb(202, 1, 51);
+    border-radius: 40px;
+    background-color: rgb(202, 1, 51);
+    color: white;
+    margin-right: 20px;
+}
+
+.login:hover,.login:focus {
+    background-color: white;
+    color:rgb(202, 1, 51);
+    transition: 0.3s;
+}
+
+.degree-section{
+    background-color: rgb(252, 252, 199);
+    
+}
+
+/* her kan det være et bilde */
+.hero-section{
+    height: 100px;
+    border-bottom: 2px solid black;
+
+    
+}
+
+.info-container{
+    padding: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.text-section{
+
+
+    
+}
+
+.description-section{
+
+}
