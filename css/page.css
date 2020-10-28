@@ -1,4 +1,3 @@
-/*Basic formating*/
 * {
     margin: 0px;
     padding: 0px;
@@ -10,12 +9,13 @@ h1 {
   margin-bottom: 1rem;
   font-size: 3rem;
   text-transform: uppercase;
-}   
+}
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -33,9 +33,23 @@ p {
 
 a {
    font-family: 'Roboto', sans-serif;
-           font-weight: bold;
+   font-weight: bold;
    font-size: 1.1rem;
-           color: rgb(83, 0, 218);
+   color: rgb(83, 0, 218);
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+       font-size: 2.0rem; 
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 li {
@@ -113,46 +127,68 @@ nav a {
     transition: 0.3s;
 }
 
+@media only screen and (max-width: 600px) {
+    .logo img{
+        margin: 10px;
+        height: 50px;
+    }
+
+    .login, .apply {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .navigation-links li {
+        margin-right: 10px;
+        font-size: 5px;
+        list-style: none;
+    }
+
+    .navigation-links a {
+        font-size: 1rem;
+    }
+}
+
 .degree-section{
     background-color: rgb(252, 252, 199);
-
 }
 
 .hero-section  {
         display: flex;
         align-items: center;
-        height: 30vh;
+        height: 200px;
         background-image: url(../bilder/pageheader.jpg);
         background-size: cover;
-        margin-bottom: 50px;
     }
 
 
 .info-container{
     display: flex;
-    flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
-  
+    align-items: flex-start;
+    padding: 80px;
+}
 
-    
+.text-section{
+    flex: 1.5;
+    padding-right: 50px;
+}
+
+.description-section {
+    flex: 1;
+    height: fit-content;
+    background-color: rgb(190, 190, 111);
+    padding: 25px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 900px) {
     
-.info-container{
-    flex-wrap: wrap;
-    }
-}
-
-.text-section{
-    padding-right: 200px;
+    .info-container{
+        flex-direction: column;
+        padding: 20px;
+        }
     
-}
-
-.description-section{
-    background-color: rgb(190, 190, 111);
-    padding: 25px;
-    margin: 100px;
-    border-radius: 10px;
-}
+        .text-section {
+            padding-right: 0px;
+        }
+    }
