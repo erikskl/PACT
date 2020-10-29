@@ -251,6 +251,12 @@ nav a {
     border-bottom: 2px solid rgb(88, 88, 88);
 }
 
+@media only screen and (max-width: 600px) {
+    .søkefelt {
+        width: 100%;
+    }
+}
+
 .søkeknapp {
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
