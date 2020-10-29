@@ -141,12 +141,11 @@ nav a {
 
     .navigation-links li {
         margin-right: 10px;
-        font-size: 5px;
         list-style: none;
     }
 
     .navigation-links a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -222,8 +221,10 @@ nav a {
     display: flex;
     align-items: center;
     min-height: 70vh;
+    padding: 40px;
     background-image: url(../bilder/students.jpg);
     background-size: cover;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -231,7 +232,6 @@ nav a {
     background-color: white;
     max-width: 400px;
     border-radius: 5px;
-    margin: 40px;
     margin-top: auto;
     -webkit-box-shadow: 5px 7px 28px -9px rgba(5,0,77,0.78);
     -moz-box-shadow: 5px 7px 28px -9px rgba(5,0,77,0.78);
@@ -392,8 +392,8 @@ nav a {
 
 .newsthumbnail {
     display: flex;
-    height: 70%;
-    transform: skew();
+    height: 200px;
+    overflow: hidden;
 }
 
 .newsthumbnail img{
@@ -403,7 +403,7 @@ nav a {
 }
 
 .news-title {
-    display: block;
+    display: inline-block;
     font-weight: bold;
     text-decoration: none;
     color: black;
